@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "color": "red",
+    "shape": "sphere",
+    "weight_g": 123
+  },
+  {
+    "id": 2,
+    "color": "white",
+    "shape": "cylinder",
+    "weight_g": 95
+  },
+  {
+    "id": 3,
+    "color": "green",
+    "shape": "cube",
+    "weight_g": 190
+  },
+  {
+    "id": 4,
+    "color": "yellow",
+    "shape": "cylinder",
+    "weight_g": 173
+  },
+  {
+    "id": 5,
+    "color": "black",
+    "shape": "sphere",
+    "weight_g": 80
+  }
+]
