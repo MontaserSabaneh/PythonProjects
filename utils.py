@@ -9,7 +9,8 @@ def load_test_data(filename=DEFAULT_DATA):
     """
     try:
         with open(filename, "r") as file:
-            return json.load(file)
+            data = json.load(file)
+            return data["obj"]
     except FileNotFoundError:
         print("Data file not found.")
         return []
