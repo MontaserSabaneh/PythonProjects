@@ -1,3 +1,5 @@
+import os
+
 from utils import classify_object
 
 
@@ -18,10 +20,20 @@ class Inventory:
 
     def display(self):
         """
-        Print all objects.
+        Display all objects and save the output to a file.
         """
-        for obj in self.objects:
-            print(obj)
+
+        # Create output folder if it does not exist
+        os.makedirs("output", exist_ok=True)
+
+        # Output file
+        output_path = "output/classified_inventory.txt"
+
+        # Save classified objects
+        with open(output_path, "w") as file:
+            for obj in self.objects:
+                print(obj)
+                file.write(str(obj) + "\n")
 
     def get_objects(self):
         """
